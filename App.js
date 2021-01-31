@@ -21,7 +21,7 @@ const BinaryConverter = () => {
               placeholderColor="white"
               value={inputText}
               onChangeText={(text) => {
-                SetInputText(text.replace(/2|3|4|5|6|7|8|9|,|\.|-/g, ''));
+                SetInputText(text.replace(/[^1|0]/g, ''));
                 SetNum(parseInt(text.replace(/\s/g, ''), 2));
               }}
             />
