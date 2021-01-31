@@ -23,11 +23,10 @@ const BinaryConverter = () => {
               onChangeText={(text) => {
                 SetInputText(text.replace(/2|3|4|5|6|7|8|9|,|\.|-/g, ''));
                 SetNum(parseInt(text.replace(/\s/g, ''), 2));
-              }}></Input>
+              }}
+            />
 
-            <Button
-              title="Convert"
-              onPress={() => SetConvertedNum(num)}></Button>
+            <Button title="Convert" onPress={() => SetConvertedNum(num)} />
           </View>
         </View>
       </ScrollView>

@@ -10,7 +10,8 @@ const Input = (props) => {
         placeholderTextColor={props.placeholderColor}
         onChangeText={props.onChangeText}
         value={props.value}
-        style={styles.input}></TextInput>
+        style={styles.input}
+      />
     </View>
   );
 };
